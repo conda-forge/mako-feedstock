@@ -8,21 +8,23 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ checksum }}
 
 build:
+  noarch: python
   preserve_egg_dir: True
   entry_points:
     - mako-render=mako.cmd:cmdline
-  script: python setup.py install
-  number: 0
+  script: python -m pip install --no-deps --ignore-installed .
+  number: 1
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
     - markupsafe >=0.9.2
+    
   run:
     - python
     - markupsafe >=0.9.2
