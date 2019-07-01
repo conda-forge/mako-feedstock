@@ -1,6 +1,6 @@
 {% set name = "Mako" %}
-{% set version = "1.0.10" %}
-{% set checksum = "7165919e78e1feb68b4dbe829871ea9941398178fa58e6beedb9ba14acf63965" %}
+{% set version = "1.0.13" %}
+{% set checksum = "95ee720cc3453063788515d55bd7ce4a2a77b7b209e4ac70ec5c86091eb02541" %}
 
 package:
   name: {{ name|lower }}
