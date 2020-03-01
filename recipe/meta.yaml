@@ -1,6 +1,6 @@
 {% set name = "Mako" %}
-{% set version = "1.1.0" %}
-{% set checksum = "a36919599a9b7dc5d86a7a8988f23a9a3a3d083070023bab23d64f7f1d1e0a4b" %}
+{% set version = "1.1.2" %}
+{% set checksum = "3139c5d64aa5d175dbafb95027057128b5fbd05a40c53999f3905ceb53366d9d" %}
 
 package:
   name: {{ name|lower }}
@@ -13,10 +13,10 @@ source:
 
 build:
   noarch: python
-  preserve_egg_dir: True
+  preserve_egg_dir: true
   entry_points:
     - mako-render=mako.cmd:cmdline
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   number: 0
 
 requirements:
@@ -24,7 +24,7 @@ requirements:
     - python
     - pip
     - markupsafe >=0.9.2
-    
+
   run:
     - python
     - markupsafe >=0.9.2
