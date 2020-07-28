@@ -5,7 +5,7 @@ Home: http://www.makotemplates.org/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A super-fast templating language that borrows the best ideas from the existing templating languages.
 
@@ -117,4 +117,5 @@ Feedstock Maintainers
 =====================
 
 * [@pmlandwehr](https://github.com/pmlandwehr/)
+* [@xhochy](https://github.com/xhochy/)
 
