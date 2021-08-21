@@ -1,15 +1,13 @@
 {% set name = "Mako" %}
 {% set version = "1.1.5" %}
-{% set checksum = "169fa52af22a91900d852e937400e79f535496191c63712e3b9fda5a9bed6fc3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ checksum }}
+  sha256: 169fa52af22a91900d852e937400e79f535496191c63712e3b9fda5a9bed6fc3
 
 build:
   noarch: python
@@ -21,12 +19,11 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*
     - pip
     - markupsafe >=0.9.2
-
   run:
-    - python
+    - python >=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*
     - markupsafe >=0.9.2
 
 test:
