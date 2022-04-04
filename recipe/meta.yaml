@@ -18,12 +18,12 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python
     - importlib-metadata  # [py<38]
     - markupsafe >=0.9.2
     - pip
   run:
-    - python >=3.7
+    - python
     - importlib-metadata  # [py<38]
     - markupsafe >=0.9.2
 
