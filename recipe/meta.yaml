@@ -10,6 +10,7 @@ source:
   sha256: 9a7c7e922b87db3686210cf49d5d767033a41d4010b284e747682c92bddd8b39
 
 build:
+  noarch: python
   preserve_egg_dir: true
   entry_points:
     - mako-render=mako.cmd:cmdline
@@ -19,12 +20,12 @@ build:
 requirements:
   host:
     - python
-    - importlib-metadata  # [py<38]
+    - importlib-metadata
     - markupsafe >=0.9.2
     - pip
   run:
     - python
-    - importlib-metadata  # [py<38]
+    - importlib-metadata
     - markupsafe >=0.9.2
 
 test:
