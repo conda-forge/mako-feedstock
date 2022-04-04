@@ -39,7 +39,7 @@ about:
   license: MIT
   summary: A super-fast templating language that borrows the best ideas from the existing templating languages.
   doc_url: http://docs.makotemplates.org/en/latest/
-  dev_url: https://bitbucket.org/zzzeek/mako/src
+  dev_url: https://github.com/sqlalchemy/mako
 
 extra:
   recipe-maintainers:
