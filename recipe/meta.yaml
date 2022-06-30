@@ -1,5 +1,5 @@
 {% set name = "Mako" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9a7c7e922b87db3686210cf49d5d767033a41d4010b284e747682c92bddd8b39
+  sha256: f054a5ff4743492f1aa9ecc47172cb33b42b9d993cffcc146c9de17e717b0307
 
 build:
   noarch: python
@@ -15,7 +15,7 @@ build:
   entry_points:
     - mako-render=mako.cmd:cmdline
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
