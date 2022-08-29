@@ -1,5 +1,5 @@
 {% set name = "Mako" %}
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f054a5ff4743492f1aa9ecc47172cb33b42b9d993cffcc146c9de17e717b0307
+  sha256: 3724869b363ba630a272a5f89f68c070352137b8fd1757650017b7e06fda163f
 
 build:
   noarch: python
