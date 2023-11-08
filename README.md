@@ -1,11 +1,11 @@
-About mako
-==========
+About mako-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mako-feedstock/blob/main/LICENSE.txt)
 
 Home: http://www.makotemplates.org/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mako-feedstock/blob/main/LICENSE.txt)
 
 Summary: A super-fast templating language that borrows the best ideas from the existing templating languages.
 
