@@ -15,7 +15,7 @@ build:
   entry_points:
     - mako-render=mako.cmd:cmdline
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
