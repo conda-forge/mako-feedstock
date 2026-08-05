@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: mako
-  version: "1.4.0"
+  version: "1.4.1"
 
 package:
   name: ${{ name }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/M/Mako/${{ name }}-${{ version }}.tar.gz
-  sha256: 61aac9619e1325fa6e7be2f8dd463caef61247b3cd32a41a8692684548269ce3
+  sha256: d7904710b662996425a21627710c4777c45053146942cf8a7aebf757c92b8c27
 
 build:
   noarch: python
